@@ -74,7 +74,7 @@ app.post('/users', (req, res) => {
     };
     users.push(newUser);
     fs.writeFileSync(filePath, JSON.stringify(users), 'utf8');
-     res.send({ newUser });
+    res.send({ newUser });
 });
 
 app.delete('/users/:id', (req, res) => {
